@@ -1,4 +1,282 @@
 html {
   font-size: 18px;
+}
+
+body {
   font-family: Helvetica;
+  font-size: 18px;
+  color: white;
+}
+
+.header {
+  background-color: black;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  padding: .66rem 0 .66rem 0.5rem;
+}
+
+.header img {
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header span {
+  margin-top: 0.66rem;
+  margin-bottom: 0.66rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.hero .container {
+  display: flex;
+}
+
+.hero-title {
+  background-color: black;
+  padding: 2rem 3rem;
+  width: 20rem;
+  margin-top: 9rem;
+}
+
+.hero-title h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: .25rem;
+}
+
+.menu-bar {
+  background-color: firebrick;
+  width: 100%;
+}
+
+.menu-mobile {
+  background-color: firebrick;
+  width: 100%;
+}
+
+.menu-bar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-mobile .container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  margin: 0.75rem auto;
+}
+
+.products {
+  margin: 3rem auto;
+}
+
+.products .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-box-glasses {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-box-watch {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image {
+  height: 9rem;
+  padding: 2rem 0;
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image-glasses {
+  height: 9rem;
+  padding: 2rem 0;
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image-watch {
+  height: 9rem;
+  padding: 2rem 0;
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  max-width: 8rem;
+  max-height: 100%;
+}
+
+.product-image-glasses img {
+  max-width: 8rem;
+  max-height: 100%;
+}
+
+.product-image-watch img {
+  max-width: 8rem;
+  max-height: 100%;
+}
+
+.product-text {
+  background-color: black;
+  padding: 0.5rem;
+  width: auto;
+  text-align: center;
+}
+
+.product-text-glasses {
+  background-color: black;
+  padding: 0.5rem;
+  width: auto;
+  text-align: center;
+}
+
+.product-text-watch {
+  background-color: black;
+  padding: 0.5rem;
+  width: auto;
+  text-align: center;
+}
+
+.info {
+  margin-bottom: 4rem;
+}
+
+.info .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.info-title {
+  background-color: black;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.info-piece {
+  color: black;
+}
+
+.footer {
+  background-color: black;
+  height: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer .container {
+  width: 100%;
+}
+
+@media only screen and (max-width : 1024px) {
+  .menu-bar {
+    display: none;
+  }
+
+  .product-box {
+    width: 47%;
+  }
+
+  .product-box {
+    width: 47%;
+  }
+
+  .product-box-glasses {
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 1024px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 470px) {
+  .hero-title h4 {
+    font-size: 0.77rem;
+  }
+  .hero-title h1 {
+    font-size: 1rem;
+  }
+
+  .hero-title {
+    padding: 1rem 2rem;
+    width: 100%;
+    margin-top: 10rem;
+  }
+
+  .hero {
+    height: 14.5rem;
+  }
+
+  .product-box-watch {
+    display: none;
+  }
+
+  .product-box {
+    width: 90%;
+  }
+
+  .products .container {
+    justify-content: center;
+  }
+
+  .info .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-item {
+    margin: 0.5rem;
+    width: 90%;
+  }
+
+  .footer {
+    text-align: center;
+  }
 }
